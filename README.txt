@@ -1,8 +1,6 @@
+Todos alguna vez hemos querido realizar un USB-Rubber Ducky, con el Arduino podemos realizar esta misma metodología para poder controlar el teclado y realizar instrucciones al conectar a un pc.
 
 
-	ESTE CODIGO FUE SACADO DE UN CANAL DE YOUTUBE ESTO NO LO HAGO CON FINES DE LUCRO
-	FUE UNO DE LOS PRIMEROS PROYECTOS EN ARDUINO QUE HICE Y ME PARECIO BUENO, DURANTE
-	LA MARCHA APRENDI A USAR EL SOFTWARE DE ARDUINO Y LO QUE PUEDE LLEGAR HACER
+Tenemos que entender que para realizar este proyecto se requiere que nuestro Arduino tenga HID (Human Interface Device) de esta manera tener acceso a manejar teclado y mouse/ratón del dispositivo que se vaya a utilizar.
 
-	
-	VIDEO DEL TIPO = https://www.youtube.com/watch?v=MhiTRqRsJDQ&t=1242s
+Cabe aclarar que este código lo configure para que abra una ventana de PowerShell, y desde ahí poder descargar un archivo, este archivo no es mas que una carga útil para tomar control de un Windows, pero en si podemos configurar el código para realizar lo que queremos realizar. Esta carga útil se obtiene con el framework metasploit que nos permite realizar ataques con vulnerabilidades conocidas. Simplemente cambiamos el URL para poder indicar al PowerShell de donde descargarlo y ejecutarlo.
